@@ -33,7 +33,7 @@ export const PlansSection = () => {
 
             <section className="md:w-max max-w-[1300px] p-6 md:p-0 mx-auto flex flex-col justify-center items-center md:mt-20 gap-8">
               <span className="w-full md:w-3/4 md:mx-auto md:text-center mb-8">
-                <h1 className="text-[28px] md:text-[40px]">
+                <h1 className="md:w-max text-[28px] md:text-[40px]">
                   {user.name} ¿Para quién deseas 
                 </h1>
                 <h1 className="text-[28px] md:text-[40px]">
