@@ -101,6 +101,10 @@ li {
   background-color: #4F4FFF !important;
 }
 
+.MuiButtonBase-root {
+  padding: 10px !important;
+}
+
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
   -webkit-appearance: none; 
