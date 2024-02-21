@@ -40,7 +40,6 @@ export const FormRegistration = () => {
   });
 
   const onSubmit = ({ notValid, ...values }) => {
-    console.log(values)
     const findUser = userData.find(
       ({ document, typeDocument, mobile }) =>
         document === values.document &&

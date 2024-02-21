@@ -3,11 +3,17 @@ import { FormRegistration } from "./components/FormRegistration";
 import { MainLayout } from "@/layouts/MainLayout";
 import { HomeLayout } from "@/layouts/HomeLayout";
 import family from "@/assets/imgs/family.png";
+import { useUserStore } from "@/stores/user.store";
+import { useNavigate } from "react-router-dom";
 
 export const Home = () => {
-  
+  const { isLogged } = useUserStore(state => state.user) 
+  const navigate = useNavigate()
+
   useEffect(() => {
-    localStorage.removeItem("user-storage")
+    if (isLogged) {
+      navigate("/plans")
+    }
   }, [])
 
   return (
