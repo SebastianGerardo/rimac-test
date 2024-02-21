@@ -26,9 +26,9 @@ export const CardDescription = ({ icon, isRecomended, data }) => {
 
   return (
     <WhiteCard className="flex flex-col justify-between items-center py-8">
-      <div className="flex flex-col justify-start mt-4 font-lato w-[257px]">
+      <div className="flex flex-col justify-start mt-4 font-lato w-[257px] relative">
         {isRecomended && (
-          <h6 className='bg-greenAqua text-neutrals-900 py-[2px] px-2 w-max font-black rounded-md mb-3'>
+          <h6 className='bg-greenAqua text-neutrals-900 py-[2px] px-2 w-max font-black rounded-md mb-3 absolute -top-7'>
             Plan recomendado
           </h6>
         )}
