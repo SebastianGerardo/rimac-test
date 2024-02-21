@@ -1,6 +1,6 @@
 import { UsersIcon } from "@/assets/icons/UsersIcon"
 import { ReturnButton } from "@/components/ReturnButton"
-import { WhiteCard } from "@/components/WhiteCard"
+import { WhiteCard } from "@/layouts/WhiteCard"
 import { MainLayout } from "@/layouts/MainLayout"
 import { Description } from "./components/Description"
 import { Steps } from "@/components/Steps"
@@ -9,7 +9,7 @@ import { PrivateRouter } from "@/wrappers/PrivateRouter"
 import { useUserStore } from "@/stores/user.store"
 import { IsPlanSelected } from "@/wrappers/IsPlanSelected"
 
-export const PaymentDetail = () => {
+export default function PaymentDetail () {
   const user = useUserStore(state => state.user)
   const { name, price } = user.selectedPlan || {}
   

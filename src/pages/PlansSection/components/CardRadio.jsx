@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import { PersonProtectionIcon } from '@/assets/icons/PersonProtectionIcon'
 import { Radio } from '../../../components/Radio'
 import { PersonHealingIcon } from '@/assets/icons/PersonHealingIcon'
-import { WhiteCard } from '../../../components/WhiteCard'
+import { WhiteCard } from '../../../layouts/WhiteCard'
 import { useUserStore } from '@/stores/user.store'
 
 const iconsValidation = {

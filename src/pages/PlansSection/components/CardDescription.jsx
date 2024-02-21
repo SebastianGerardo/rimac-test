@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import { HomeLightIcon } from "@/assets/icons/HomeLightIcon";
-import { WhiteCard } from "../../../components/WhiteCard";
+import { WhiteCard } from "../../../layouts/WhiteCard";
 import { HospitalLightIcon } from "@/assets/icons/HospitalLightIcon";
 import { Button } from "../../../components/Button";
 import { useUserStore } from '@/stores/user.store';

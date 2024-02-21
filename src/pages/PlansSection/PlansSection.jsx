@@ -9,7 +9,7 @@ import { useUserStore } from "@/stores/user.store"
 import { PrivateRouter } from "@/wrappers/PrivateRouter"
 import { RadioGroup } from "@mui/material"
 
-export const PlansSection = () => {
+export default function PlansSection () {
   const user = useUserStore(state => state.user)
   const setUser = useUserStore(state => state.setUser)
   const resetUser = useUserStore(state => state.resetUser)
