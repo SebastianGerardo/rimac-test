@@ -12,6 +12,7 @@ import { RadioGroup } from "@mui/material"
 export const PlansSection = () => {
   const user = useUserStore(state => state.user)
   const setUser = useUserStore(state => state.setUser)
+  const resetUser = useUserStore(state => state.resetUser)
 
   const { data } = usePlans()
   
@@ -19,7 +20,6 @@ export const PlansSection = () => {
     setUser({ [name]: value })
   }
 
-  
   return (
     <PrivateRouter>
       <HomeLayout>
@@ -29,12 +29,12 @@ export const PlansSection = () => {
             maxWidth: "1300px",
             padding: "2.5rem 0"
           }}>
-            <ReturnButton />
+            <ReturnButton onClick={resetUser} />
 
             <section className="md:w-max max-w-[1300px] p-8 md:p-0 mx-auto flex flex-col justify-center items-center md:mt-20 gap-8">
               <span className="md:w-3/4 md:mx-auto md:text-center mb-8">
                 <h1 className="text-[28px] md:text-[40px]">
-                  Rocío ¿Para quién deseas 
+                  {user.name} ¿Para quién deseas 
                 </h1>
                 <h1 className="text-[28px] md:text-[40px]">
                   cotizar?

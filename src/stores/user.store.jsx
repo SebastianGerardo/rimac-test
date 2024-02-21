@@ -6,9 +6,10 @@ export const useUserStore = create(
     (set, get) => ({
       user: {
         "plan": "",
-        isLogged: false
+        isLogged: false,
       },
       setUser: (value) => set((state) => ({ user: { ...state.user, ...value } })),  
+      resetUser: () => set(({ user: { plan: "", isLogged: false } })),  
       computed: {
         get age() {
           const { birthDay } = get().user;
@@ -20,7 +21,8 @@ export const useUserStore = create(
       }
     }),
     {
-      name: "user-storage"
+      name: "user-storage",
+      // partialize: ({ user: { plan, selectedPlan, ...restUser } }) => ({ user: { ...restUser, plan: "" } }),
     }
   )
 );

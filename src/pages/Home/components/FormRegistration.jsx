@@ -22,6 +22,8 @@ const initialValues = {
   typeDocument: "DNI",
   politics: false,
   comunications: false,
+  document: "",
+  mobile: ""
 };
 
 export const FormRegistration = () => {
