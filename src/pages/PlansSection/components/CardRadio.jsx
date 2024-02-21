@@ -13,14 +13,14 @@ const iconsValidation = {
 export const CardRadio = ({ title, icon, description, group, name, ...props }) => {
   const setUser = useUserStore(state => state.setUser)
   return (
-    <div onClick={() => setUser({ [name]: props.value })} className={`border-[3px] rounded-2xl ${group == props.value ? 'border-black' : 'border-transparent'}`}>
+    <div onClick={() => setUser({ [name]: props.value })} className={`border-[3.5px] rounded-3xl ${group == props.value ? 'border-black' : 'border-transparent'}`}>
       <WhiteCard>
-        <div className='w-full md:w-[246px] relative'>
+        <div className='w-full md:w-[225px] p-2 relative'>
           <div className='flex justify-end'>
             <Radio className="absolute -top-3 -right-1 z-20" {...props} />
           </div>
-          <div className='flex flex-col justify-start mt-4'>
-            <span className='flex items-center md:items-start md:flex-col gap-y-2'>
+          <div className='flex flex-col justify-start mt-4 gap-3 md:gap-2'>
+            <span className='flex items-center md:items-start md:flex-col gap-2'>
               {iconsValidation[icon]}
               <h2>
                 {title}

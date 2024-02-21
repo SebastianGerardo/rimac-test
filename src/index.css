@@ -97,6 +97,10 @@ li {
   margin-right: 0 !important;
 }
 
+.css-5xe99f-MuiLinearProgress-bar1 {
+  background-color: #4F4FFF !important;
+}
+
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
   -webkit-appearance: none; 
