@@ -4,7 +4,7 @@ import logo from '@/assets/imgs/logo.png'
 import { MainLayout } from '@/layouts/MainLayout'
 
 export const Navbar = () => (
-  <section className='w-full py-4 px-2 md:px-0'>
+  <section className='w-full py-4 px-5 md:px-0'>
     <MainLayout className="flex justify-between items-center">
       <Link to="/">
         <img src={logo} alt="logo" className='w-full h-full' />

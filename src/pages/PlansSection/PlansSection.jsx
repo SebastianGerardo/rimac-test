@@ -19,7 +19,7 @@ export const PlansSection = () => {
     setUser({ [name]: value })
   }
 
-
+  
   return (
     <PrivateRouter>
       <HomeLayout>
@@ -31,7 +31,7 @@ export const PlansSection = () => {
           }}>
             <ReturnButton />
 
-            <section className="w-max max-w-[1300px] mx-auto flex flex-col justify-center items-center md:mt-20 gap-8">
+            <section className="md:w-max max-w-[1300px] p-8 md:p-0 mx-auto flex flex-col justify-center items-center md:mt-20 gap-8">
               <span className="md:w-3/4 md:mx-auto md:text-center mb-8">
                 <h1 className="text-[28px] md:text-[40px]">
                   Rocío ¿Para quién deseas 
